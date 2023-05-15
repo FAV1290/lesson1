@@ -1,23 +1,24 @@
 import logging
 import settings
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
+
+
 logging.basicConfig(filename='bot.log', level=logging.INFO)
-version = '0.0000000000000000002'
+VERSION = '0.2.2-alpha'
 
 
 def my_version(update, context):
-    print('Вызван /verson')
-    update.message.reply_text(f'Привет! Это версия бота №{version}')    
+    print('Вызвана команда /verson')
+    update.message.reply_text(f'Привет! Это версия бота №{VERSION}')    
 
 
 def talk_to_me(update, context):
-    user_text = update.message.text 
-    print(user_text)
+    user_text = update.message.text
     update.message.reply_text(user_text)
 
 
 def greet_user(update, context):
-    print('Вызван /start')
+    print('Вызвана команда /start')
     update.message.reply_text('Привет, пользователь! Ты вызвал команду /start')
 
 

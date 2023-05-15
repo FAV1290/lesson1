@@ -1,5 +1,4 @@
 def format_price(price):
-    # price = int(price)
     return f'Цена: {int(price)} руб.'
 
 

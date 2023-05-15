@@ -1,6 +1,6 @@
 test_dict = {
-'city' : 'Moscow',
-'temperature' : '20'    
+    'city' : 'Moscow',
+    'temperature' : '20'    
 }
 print(test_dict['city'])
 test_dict['temperature'] = str(int(test_dict['temperature']) - 5)
