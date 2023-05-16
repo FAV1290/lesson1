@@ -1,4 +1,4 @@
-test_list = [3, 5, 7, 9, 10.5]
+test_list = [3, 5, 7, 9, 10.5,]
 print(test_list)
 test_list.append('Python')
 print(len(test_list))
