@@ -2,4 +2,9 @@ def get_summ(one, two, delimiter='&'):
     return f'{one}{delimiter}{two}'
 
 
-print(get_summ('Learn', 'python').upper())
+def main():
+    print(get_summ('Learn', 'python').upper())
+
+
+if __name__ == "__main__":
+    main()
